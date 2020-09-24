@@ -37,6 +37,7 @@ export default class Navbar extends Component {
            
             <p> <Link to="/about">about me </Link></p>
             </div>
+           
             <div  className="burger"  onClick={this.handleClick}>
             <MenuIcon />  
         </div>

@@ -1,6 +1,7 @@
 .background-image{
     min-height: calc(100vh - 66px);
     background: url("../images/anish.jpg") center/cover no-repeat;
+    height: 400px;
     display : flex;
     align-items: center;
     

@@ -6,7 +6,7 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
-    text-shadow: 8px 2px 8px #000000;
+    text-shadow: 4px 2px 8px #000000;
 }
 
 .text-button{
@@ -16,7 +16,7 @@
     padding: 10px;
     text-align: center;
     width: 250px;
-    height: atuo;
+    height: auto;
     border-radius: 10px;
     background-color: rgb(0,0,0,0.5);
 }
@@ -37,6 +37,33 @@
 
 .text > p{
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 20px;
     
 }
+
+
+@media only screen and (max-width: 600px) {
+    .text{
+        margin-left: 8%;
+    }
+    .text > h1{
+        font-size: 40px;
+        font-weight: 500px;
+        
+    }
+    .text > h2{
+      font-size:   30px;
+      font-weight: 500px;
+    }
+    
+    .text > p{
+        margin-top: 10px;
+        font-size: 15px;
+        
+    }
+
+    .text-button{
+        width:180px;
+        background-color: #ff4d4d;
+    }
+  }
