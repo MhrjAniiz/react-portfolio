@@ -1,0 +1,66 @@
+.navbar{
+    position: sticky;
+    top:0;
+    z-index: 100;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #262626;
+    color: white;
+}
+
+
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4d4d;
+    cursor: pointer;
+}
+.navbar >h1{
+    margin-left: 0px;
+    text-transform: uppercase;
+}
+.navbar > h1 a{
+    color: #ff4d4d;
+}
+
+.nav-text{
+    
+    text-transform: uppercase;
+    display :none;
+}
+
+.show-text{
+    display: block;
+    margin-top: 10px;
+}
+
+
+.nav-text >p {
+   
+    margin-right: 30px ;
+    margin-top: 5px;
+    
+}
+
+
+@media only screen and (min-width: 720px) {
+    .navbar >h1{
+        margin-left: 40px;
+       
+    }
+
+   .navbar{
+       display: flex;
+   }
+   .burger{
+    display : none;
+}
+.nav-text{
+    display : flex;
+    margin-top: -5px;
+}
+  }
