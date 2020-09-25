@@ -26,7 +26,7 @@ export default class Navbar extends Component {
             
             <div className={this.state.isOpen ? "nav-text show-text" : "nav-text "}>
                 
-            <p>resume</p>
+            <p><a href="https://mhrjanish.pythonanywhere.com/static/image/anishcv-converted.pdf">resume</a></p>
            <p>
            <a href="https://github.com/MhrjAniiz">github</a>
            </p>

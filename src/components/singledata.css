@@ -1,0 +1,60 @@
+.skills-body{
+ display :flex;
+ justify-content: center;
+flex-wrap: wrap;
+margin-top: 50px;
+ 
+ 
+}
+
+.skill-cards{
+    height: 250px;
+    width: 200px;
+    background-color:white;
+    margin:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .2s ease-in-out; 
+   
+}
+
+.skill-cards:hover{
+    transform: scale(1.1); 
+}
+
+.skill-cards > h1{
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.skill-image{
+    
+    width:200px;
+    height:auto;
+   
+}
+
+@media only screen and (max-width: 600px){
+    .skill-cards{
+        height:auto;
+        width: 100px;
+        margin:25px;
+       
+    }
+    .skill-image{
+    
+        width:100px;
+        height:auto;
+       
+    }
+    .skill-cards > h1{
+       font-size: 20px;
+    }
+    .skills-body{
+      
+       margin-top: 30px;
+        
+        
+       }
+}
