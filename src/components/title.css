@@ -1,18 +1,22 @@
 .title{
-    display: flex;
+    display: flex;;
+    flex:1;
     justify-content: center;
+    
 }
 .title > h1{
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 60px;
+    margin-top: 70px;
     font-size: 60px;
     text-transform: uppercase;
-    color:grey;
+    color:  #404040;
+    
 }
 
 @media only screen and (max-width: 600px){
     .title > h1{
-    
+        margin-left: 25px;
+       
         font-size: 30px;
         
     }

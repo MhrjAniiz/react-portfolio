@@ -6,7 +6,8 @@ import Project from "../components/Project";
 import {Data} from '../data';
 import Skills from '../components/Skills'
 import Title from '../components/title';
-
+import Button from '../components/button'
+import '../components/button.css'
 
 
 export default class home extends Component {
@@ -40,7 +41,10 @@ export default class home extends Component {
             description="I am a student focused to become a web developer"
           />
         </Background>
-        <Title title='familiar languages'/>
+        <Title title="choose what you wanna see"/>
+        <Button />
+        
+       
         <Skills data={Data}/>
         <Project data={this.state.info} />
       </div>
