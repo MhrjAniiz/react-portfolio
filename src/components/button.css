@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-evenly;
     margin-top:110px;
+    margin-bottom: 115px;
     
 }
 .header{
@@ -16,6 +17,7 @@
 }
 
 .image1{
+    margin-left: 5px;
     padding:10px;
     width:200px;
     height:200px;
@@ -23,6 +25,7 @@
     
 }
 .image2{
+    margin-left: 5px;
     padding:10px;
     width: 200px;
     height:200px;
@@ -71,13 +74,13 @@
     }
     .button-body{
         display:flex;
-         margin-top:50px;
+         margin-top:70px;
          
         
     }
     .header{
         padding:3px;
-        margin-left: 5px;
+        margin-left: 10px;
          margin-top: 10px;
          margin-bottom: 10px;
          font-size: 18px;
