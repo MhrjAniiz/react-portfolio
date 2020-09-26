@@ -25,10 +25,11 @@ export default function About() {
       <h4>kathmandu, Nepal</h4>
       <h4>Find me on social media : <a className="link1" href="https://www.facebook.com/mhrj.anish/">@mhrjanish</a></h4>
       <div className="links">
-          <FacebookIcon  className="icon f"/>
-          <InstagramIcon  className="icon i" />
-          <LinkedInIcon  className="icon l"/>
-          <GitHubIcon  className="icon g"/>
+        <a href="https://www.facebook.com/mhrj.anish/"><FacebookIcon  className="icon f"/></a>
+         
+        <a href="https://www.instagram.com/mhrjanish/"> <InstagramIcon  className="icon i" /></a>
+        <a href="https://www.linkedin.com/in/anish-maharjan-a175511a5/"><LinkedInIcon  className="icon l"/></a>
+        <a href="https://github.com/MhrjAniiz"><GitHubIcon  className="icon g"/></a>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ export default function Text({children, name,description}) {
             <h1>hello !!</h1>
             <h2>{`i'm ${name}`}</h2>
             <p>{description}</p>
-            <Link to="/about">
+            <Link className="text-link" to="/about">
             <div className="text-button">about me</div>
             </Link>
             {children}

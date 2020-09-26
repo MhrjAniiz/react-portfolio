@@ -1,6 +1,11 @@
 .desc{
-    margin: 2% 10%;
+    margin: 2% 13%;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
+}
+
+.hr{
+    
+    width: 70%;
 }

@@ -4,6 +4,8 @@ import { Route, Switch} from 'react-router-dom'
 import About from './pages/About'
 import Navbar from './components/Navbar'
 import SkillsPage from './pages/SkillsPage'
+import Project from './components/Project'
+import Error from './pages/Error'
 
 
 export default class App extends Component {
@@ -15,6 +17,8 @@ export default class App extends Component {
           <Route exact path="/" component={Home}/>
           <Route exact path="/about" component={About}/>
           <Route exact  path="/skills" component={SkillsPage}/>
+          <Route exact path="/projects" component={Project} />
+          <Route component={Error}/>
           </Switch>
        
 

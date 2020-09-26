@@ -6,6 +6,9 @@
     margin-bottom: 115px;
     
 }
+.btn-links{
+    text-decoration: none;
+}
 .header{
     padding:10px;
    margin-left: 20px;

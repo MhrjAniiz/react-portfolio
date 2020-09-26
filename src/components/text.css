@@ -25,6 +25,9 @@
     background-color: #ff4d4d;
 }
 
+.text-link{
+    text-decoration: none;
+}
 .text > h1{
     font-size: 70px;
     font-weight: 500px;

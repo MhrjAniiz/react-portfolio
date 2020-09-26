@@ -1,23 +1,11 @@
 import React from 'react'
+import Card from './card'
+import './card.css'
 
-export default function SingleProject({description,title}) {
+
+export default function SingleProject({title,url,image}) {
     return (
-        <div>
-     <h1>{title}</h1>
-     <h1>{description}</h1>
-     <h1>{title}</h1>
-     <h1>{description}</h1>
-     <h1>{title}</h1>
-     <h1>{description}</h1>
-     <h1>{title}</h1>
-     <h1>{description}</h1>
-     <h1>{title}</h1>
-     <h1>{description}</h1>
-     <h1>{title}</h1>
-     <h1>{description}</h1>
-     <h1>{title}</h1>
-     <h1>{description}</h1>
-
-        </div>
-    )
+    <div><Card title={title} url={url} image={image} />
+    </div>
+)
 }
