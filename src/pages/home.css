@@ -1,0 +1,25 @@
+.circle{
+    display : block;
+    position: fixed;
+    bottom: 0;
+    right:20px;
+}
+.addcircle{
+    margin-top:5px;
+    width: 60px!important;
+    height: 60px!important;
+   color: #ff4d4d;
+    transition: all .2s ease-in-out; 
+}
+.addcircle:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px){
+    .addcircle{
+        margin-top:3px;
+        width: 40px!important;
+        height: 40px!important;
+    
+    } 
+}

@@ -8,11 +8,17 @@ import Project from './components/Project'
 import Error from './pages/Error'
 
 
+
+
+
 export default class App extends Component {
+
   render() {
     return (
       <div>
+    
         <Navbar />
+
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/about" component={About}/>
@@ -20,9 +26,9 @@ export default class App extends Component {
           <Route exact path="/projects" component={Project} />
           <Route component={Error}/>
           </Switch>
-       
+          </div>
 
-      </div>
+    
     )
   }
 }

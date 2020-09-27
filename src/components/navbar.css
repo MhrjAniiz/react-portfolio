@@ -1,11 +1,11 @@
 .navbar{
     position: sticky;
     top:0;
-    z-index: 100;
+    z-index: 90%;
     display: block;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 5px;
     background-color: #262626;
     color: white;
 }
@@ -21,6 +21,7 @@
 }
 .navbar >h1{
     margin-left: 0px;
+    font-size: 25px;
     text-transform: uppercase;
 }
 
@@ -48,11 +49,13 @@
 
     .navbar >h1{
         margin-left: 40px;
+        font-size: 35px;
        
     }
 
    .navbar{
        display: flex;
+       padding: 15px;
    }
    .burger{
     display : none;
