@@ -6,7 +6,7 @@ import Navbar from './components/Navbar'
 import SkillsPage from './pages/SkillsPage'
 import Project from './components/Project'
 import Error from './pages/Error'
-
+import Update from './login/Update'
 
 
 
@@ -24,6 +24,7 @@ export default class App extends Component {
           <Route exact path="/about" component={About}/>
           <Route exact  path="/skills" component={SkillsPage}/>
           <Route exact path="/projects" component={Project} />
+          <Route exact path="/login" component={Update} />
           <Route component={Error}/>
           </Switch>
           </div>

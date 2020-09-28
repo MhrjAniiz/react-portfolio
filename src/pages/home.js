@@ -1,8 +1,6 @@
-
-import {useState} from 'react'
+import {Link} from 'react-router-dom'
 import React from 'react'
 import './home.css'
-import Form from '../login/Form'
 import Background from '../components/Background'
 import Text from '../components/Text'
 import Title from '../components/title'
@@ -12,8 +10,6 @@ import CommentRoundedIcon from '@material-ui/icons/CommentRounded';
 
 
 export default function App() {
-  const [open, setOpen] = useState(true);
-
   return (
  <div>
     <Background>
@@ -23,7 +19,6 @@ export default function App() {
     />
 
   </Background>
-  <Form open={open} setOpen={setOpen}/>
   <Title title="choose what you wanna see" />
   <Button />
     <div className="circle">
@@ -32,7 +27,8 @@ export default function App() {
       </div>
      
       <div>
-      <AddCircleIcon className="addcircle" onClick={()=>setOpen(!open)}/>
+        <Link to ="/login"><AddCircleIcon className="addcircle" /></Link>
+      
       </div>
       
     
