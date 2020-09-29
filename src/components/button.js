@@ -30,6 +30,16 @@ export default function button() {
           <h1 className="header">languages i use</h1>
           </Link>
         </div>
+        <div className="image2-body">
+          <a className="resume" href="https://mhrjanish.pythonanywhere.com/static/image/anishcv-converted.pdf">
+          <img
+            className="image2"
+            src="https://image.flaticon.com/icons/svg/1066/1066455.svg"
+            alt="button2"
+          />
+          <h1 className="header">resume</h1>
+          </a>
+        </div>
 
       </div>
     </div>
