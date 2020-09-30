@@ -37,11 +37,13 @@ export default function App() {
         case "auth/invalid-email":
           case "auth/user-disabled":
             case "auth/user-not-found":
+             
               setEmailError(err.message);
               break;
               case "auth/wrong-password":
                 setpasswordError(err.message);
                 break;
+                default: console.log("helo")
       }
     });
   };
