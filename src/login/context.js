@@ -83,7 +83,7 @@ const portfolioContext = React.createContext();
     }
 
     handleRemove = (id)=>{
-        instance.delete(`/results/$(id).json`).then(res=>{
+        instance.delete(`/results/${id}.json`).then(res=>{
             console.log(res)
         });
         this.setState({
