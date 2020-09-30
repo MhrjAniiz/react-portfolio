@@ -7,11 +7,15 @@ import ProjectPage from './ProjectPage'
 import React from 'react'
 import './projectPage.css'
 
+
 const Project =() => {
         const content = useContext(portfolioContext);
 
         const filterResults = content.results.map(res=>{
-            return <ProjectPage  id={res.id} title={res.title} description={res.description} url={res.url} image={res.image} />
+            return <div>
+                <ProjectPage  id={res.id} title={res.title} description={res.description} url={res.url} image={res.image} />
+              
+            </div>
         })
     return (
             <>
@@ -21,7 +25,7 @@ const Project =() => {
             </div>
             <hr className="hr"/>
             <div className="p-body">
-            {filterResults}
+                {filterResults}
             </div>
             </>
         )

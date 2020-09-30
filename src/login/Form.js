@@ -1,5 +1,7 @@
 
 import React from "react";
+import './form.css'
+import Avatar from '@material-ui/core/Avatar'
 
 
 export default function Form(props) {
@@ -14,14 +16,17 @@ export default function Form(props) {
     emailError,
     passwordError,
   } = props;
-  return <section className="login">
+  return (
 
-      <div className="loginContainer">  
-      <label >username</label>
-      <input type="text" autoFocus required value={email} onChange={(e)=> setEmail(e.target.value)}/>
+      <div className="loginContainer"> 
+      <Avatar className="avg" src="https://logodix.com/logo/1707088.png"/> 
+      <h1>Admin</h1>
+  
+      <input type="text" autoFocus required value={email} placeholder="Email" onChange={(e)=> setEmail(e.target.value)}/>
       <p className="errorMsg">{emailError}</p>
-      <label>password</label>
+     
       <input type="password"
+      placeholder="password"
       required
       value={password}
       onChange={(e)=>setPassword(e.target.value)}
@@ -32,5 +37,5 @@ export default function Form(props) {
          
       </div>
       </div>
-  </section>;
+)
 }

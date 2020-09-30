@@ -32,6 +32,7 @@
   
 }
 .p-card > a> img{
+    object-fit: contain;
     border-radius: 30px;
     margin-left: -10px;
     width: 330px;
@@ -43,13 +44,15 @@
 .p-cardtext {
     display: flex;
     flex-direction: column;
-   margin-top: 10px;
+   margin-top: 15px;
      color: grey;
     font-family: 'Courier New', Courier, monospace;
-    
+    font-size: 15px;
     text-transform: capitalize;
 }
 .p-cardtext> h1{
+    margin-bottom: 8px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -61,7 +64,7 @@
     .p-card{
   
         width: 250px;
-        height: 400px;
+        height: 450px;
       
     }
     .p-card > a> img{
@@ -72,6 +75,10 @@
     .p-cardtext {
        
        margin-top: 5px;
+       font-size: 15px;
        
+    }
+    .p-cardtext> h1{
+       font-size: 20px;
     }
 }

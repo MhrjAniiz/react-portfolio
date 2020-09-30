@@ -1,0 +1,23 @@
+.adminbody{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: flex-start;
+    margin:40px;
+    border: 1px solid grey;
+}
+
+.admindbody{
+    display:flex;
+
+}
+.adminbody > img{
+    object-fit: contain;
+}
+.delete-text{
+    margin-left: 50px;
+}
+.dhr{
+    width:100%!important;
+    margin-left: 2px;
+}

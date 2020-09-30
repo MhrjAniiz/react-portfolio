@@ -6,10 +6,9 @@ import Navbar from './components/Navbar'
 import SkillsPage from './pages/SkillsPage'
 import Project from './components/Project'
 import Error from './pages/Error'
-import Update from './login/Update'
-import Login from './login/Login';
 
-import AdminPanel from './login/AdminPanel'
+import Login from './login/Login';
+import AdminFilter from './login/AdminFilter'
 
 
 
@@ -28,7 +27,7 @@ export default class App extends Component {
           <Route exact  path="/skills" component={SkillsPage}/>
           <Route exact path="/projects" component={Project} />
           <Route exact path="/login" component={Login} />
-          <Route path="/update" component={Update} />
+          <Route exact="/admin/delete/admin-delete" component={AdminFilter} />
           <Route component={Error}/>
           </Switch>
           </div>

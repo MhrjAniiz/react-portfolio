@@ -3,6 +3,17 @@
     display: flex;
     justify-content: center;
 }
+
+.form-div > h1{
+    font-size: 40px;
+    position: fixed;
+    right: 200px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.form-div >h1:hover{
+  color:red;
+}
 .form-body{
     display: flex;
     flex-direction: column;
@@ -56,5 +67,11 @@
        height: auto;
 
     }
+
+    
+.form-div > h1{
+    font-size: 40px;
+    right: 60px;
+}
 
 }

@@ -34,7 +34,7 @@ export default function button() {
           <a className="resume" href="https://mhrjanish.pythonanywhere.com/static/image/anishcv-converted.pdf">
           <img
             className="image2"
-            src="https://image.flaticon.com/icons/svg/1066/1066455.svg"
+            src="https://upload.wikimedia.org/wikipedia/commons/6/63/Changing_Careers_Cartoon_With_Floating_Resumes.svg"
             alt="button2"
           />
           <h1 className="header">resume</h1>

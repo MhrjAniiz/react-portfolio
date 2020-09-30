@@ -84,8 +84,8 @@ useEffect(()=>{
 })
 
   return (
-    <div>
-      {user ? (<AdminPanel handleSignOut={handleSignOut}/>) : (  <Form
+    <div className="formbody">
+      {user ? (<AdminPanel handleSignOut={handleSignOut } user={user}/>) : (  <Form
       email={email}
       setEmail={setEmail} 
       password={password}
