@@ -82,16 +82,15 @@ const portfolioContext = React.createContext();
         })
     }
 
-    // handleRemove = (id)=>{
-    //     instance.delete(`/results/$(id).json`).then(res=>{
-    //         console.log(res)
-    //     });
-    //     this.setState({
-    //         results: this.state.results.filter(res=>{
-    //             res.id !== id
-    //         })
-    //     })
-    // }
+    handleRemove = (id)=>{
+        instance.delete(`/results/$(id).json`).then(res=>{
+            console.log(res)
+        });
+        this.setState({
+            results: this.state.results.filter(res=>res.id !== id
+        )
+        })
+    }
 
     render() {
         return (
@@ -100,9 +99,8 @@ const portfolioContext = React.createContext();
             handleChange :this.handleChange,
             handlePost:this.handlePost,
             setFirstPop :this.setFirstPop,
-            setSecondPop : this.setSecondPop,
             removeFirstPop : this.removeFirstPop,
-            removeSecondPop: this.removeSecondPop
+            handleRemove: this.handleRemove
             }}>
             {this.props.children}
         </portfolioContext.Provider>

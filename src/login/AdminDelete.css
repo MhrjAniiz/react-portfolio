@@ -11,8 +11,10 @@
     display:flex;
 
 }
-.adminbody > img{
+.imge{
     object-fit: contain;
+    width:300px;
+    height: 250px;
 }
 .delete-text{
     margin-left: 50px;

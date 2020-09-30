@@ -10,10 +10,11 @@ import AdminDelete from './AdminDelete'
 
 const AdminFilter =() => {
         const content = useContext(portfolioContext);
+        const {handleRemove} = content;
 
         const filterResults = content.results.map(res=>{
             return <div>
-                <AdminDelete key={res.id} id={res.id} title={res.title} image={res.image} />
+                <AdminDelete key={res.id} id={res.id} title={res.title} image={res.image} handleRemove={handleRemove}/>
               
             </div>
         })
