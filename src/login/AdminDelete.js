@@ -10,7 +10,7 @@ export default function AdminDelete({id,title,image, handleRemove}) {
         <div className="delete-text">
         <h1>{title}</h1>
         <p>{`ID : ${id}`}</p>
-        <button onClick={()=>handleRemove(id)}>delete</button>
+        <button  className="delbtn" onClick={()=>handleRemove(id)}>delete</button>
         </div>
        
       
