@@ -8,7 +8,7 @@ export default function button() {
       <div className="button-body">
       
         <div className="image1-body">
-        <Link className="btn-links" to="/projects">
+        <Link className="btn-links" id="page" to="/projects">
           <img
             className="image1"
             src="https://upload.wikimedia.org/wikipedia/commons/2/24/Cartoon_Guy_In_Deep_Thought_Using_A_Computer.svg"

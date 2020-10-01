@@ -1,0 +1,8 @@
+[[redirects]]
+
+from ="/projects"
+to="/home"
+status=301
+force=false
+query={path=":path"}
+conditions={language = ["en"],country=["US"],Role=["admin"]}
