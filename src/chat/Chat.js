@@ -8,7 +8,7 @@ import firebase from 'firebase'
 import FlipMove from 'react-flip-move'
 import SendIcon from '@material-ui/icons/Send';
 import { IconButton } from '@material-ui/core';
-import fire from '../login/firebase';
+import {db} from '../login/firebase';
 
 function Chat() {
     const [input, setInput] = useState("");
@@ -20,7 +20,7 @@ function Chat() {
   
     useEffect(()=>{
         //run once when the app component load
-         fire.collection('messages').orderBy('timestamp','desc').onSnapshot(snapshot =>{
+         db.collection('messages').orderBy('timestamp','desc').onSnapshot(snapshot =>{
           setMessages(snapshot.docs.map(doc=> ({id:doc.id ,message:doc.data()})))
         })
       },[])
@@ -31,7 +31,7 @@ function Chat() {
   
     const sendMessage = (event) => {
       event.preventDefault();
-      fire.collection('messages').add({
+      db.collection('messages').add({
         message: input,
         username: userName,
         timestamp:firebase.firestore.FieldValue.serverTimestamp()
