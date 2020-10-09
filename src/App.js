@@ -9,6 +9,7 @@ import Error from './pages/Error'
 
 import Login from './login/Login';
 import AdminFilter from './login/AdminFilter'
+import Chat from './chat/Chat'
 
 
 
@@ -27,7 +28,8 @@ export default class App extends Component {
           <Route exact  path="/skills" component={SkillsPage}/>
           <Route exact path="/projects" component={Project} />
           <Route exact path="/login" component={Login} />
-          <Route exact="/admin/delete/admin-delete" component={AdminFilter} />
+          <Route exact path="/admin/delete/admin-delete" component={AdminFilter} />
+          <Route exact path="/chat" component={Chat}/>
           <Route component={Error}/>
           </Switch>
           </div>

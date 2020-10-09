@@ -23,7 +23,8 @@ export default function App() {
   <Button />
     <div className="circle">
       <div>
-      <CommentRoundedIcon className="addcircle"/>
+        <Link to="/chat"> <CommentRoundedIcon className="addcircle"/></Link>
+      
       </div>
      
       <div>

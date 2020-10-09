@@ -14,6 +14,7 @@
     "firebase": "^7.21.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-flip-move": "^3.0.4",
     "react-modal": "^3.11.2",
     "react-pdf": "^5.0.0",
     "react-router-dom": "^5.2.0",
