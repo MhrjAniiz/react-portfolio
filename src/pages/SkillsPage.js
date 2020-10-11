@@ -2,9 +2,15 @@ import React from 'react'
 import {Data} from '../data';
 import Skills from '../components/Skills'
 import Title from '../components/title'
-import "./skillsPage.css"
+import "./skillsPage.css";
+import {useEffect} from 'react'
 
 export default function SkillsPage() {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[]
+    
+    )
     return (
         <div>
             <Title title="Programming Languages I worked with"/>

@@ -1,7 +1,7 @@
 
 import Title from './title'
 import '../pages/skillsPage.css'
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import {portfolioContext } from "../login/context";
 import ProjectPage from './ProjectPage'
 import React from 'react'
@@ -9,6 +9,12 @@ import './projectPage.css'
 
 
 const Project =() => {
+
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[]
+    
+    )
         const content = useContext(portfolioContext);
 
         const filterResults = content.results.map(res=>{

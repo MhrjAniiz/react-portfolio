@@ -28,7 +28,7 @@
 
 .p-card:active{
     box-shadow: 0 5px #666;
-    transform: translateY(4px);
+   
   
 }
 .p-card > a> img{
@@ -37,6 +37,7 @@
     margin-left: -10px;
     width: 330px;
     height: 270px;
+    z-index:20%;
 }
 .p-card >a{
     text-decoration: none;
